@@ -1,0 +1,89 @@
+/* портфолио */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
+  }
+
+  &-item {
+    text-align: left;
+    margin-right: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  &-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: $white-text-color;
+    text-align: left;
+  }
+
+  &-overlay {
+    position: absolute;
+
+    display: flex;
+
+    width: 100%;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.9);
+    padding-right: 24px;
+    padding-left: 24px;
+    transition: transform $animation-duration $animation-type;
+    align-items: center;
+  }
+
+  &-description {
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    padding: 20px 24px;
+  }
+
+  &-title {
+    color: $secondary-text-color;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  &-index {
+    color: $main-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    display: inline-block;
+    margin-top: 4px;
+  }
+}
+
+.portfolio-link {
+  display: block;
+  transition: box-shadow $animation-duration $animation-type;
+
+  &:focus .portfolio-overlay,
+  &:hover .portfolio-overlay {
+    transform: translateY(-100%);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- шапка с навигацией -->
+    <header class="header header-line">
+      <div class="container header-container">
+        <nav class="navigation">
+          <a href="./index.html" class="navigation-logo"
+            >Web<span class="navigation-text">Studio</span></a
+          >
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="./index.html" class="header-link">Студия</a>
+            </li>
+            <li class="navigation-item">
+              <a href="./portfolio.html" class="header-link navigation-current"
+                >Портфолио</a
+              >
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="header-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link mail">
+              <svg class="contacts-icon" width="16" height="12">
+                <use href="./images/icons/symbol-defs.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts-link tel">
+              <svg class="contacts-icon" width="10" height="16">
+                <use href="./images/icons/symbol-defs.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="section-title visually-hidden">Портфолио</h1>
+          <!-- кнопки фильтра -->
+
+          <ul class="filter">
+            <li class="filter-item">
+              <button type="button" class="filter-button current">Все</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Веб-сайты</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Приложения</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button type="button" class="filter-button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- ссылки на работы -->
+          <h2 class="section-title visually-hidden">Примеры работ</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img
+                    src="./images/prtf/prtf1.jpg"
+                    alt="Ноутбук с фотографиями людей"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Технокряк</h3>
+                  <p class="portfolio-index">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img
+                    src="./images/prtf/prtf2.jpg"
+                    alt="Два баскетболиста борются за мяч"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Facilis officia tempora molestias commodi corporis. Sequi
+                      laudantium amet deserunt at ipsa atque accusamus enim eos
+                      ullam animi, consequatur tenetur perspiciatis
+                      necessitatibus!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="portfolio-index">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img
+                    src="./images/prtf/prtf3.jpg"
+                    alt="Текст на фоне трафарета рыбы"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Ресторан Seafood</h3>
+                  <p class="portfolio-index">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img src="./images/prtf/prtf4.jpg" alt="Наушники" />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Проект Prime</h3>
+                  <p class="portfolio-index">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img
+                    src="./images/prtf/prtf5.jpg"
+                    alt="Две картонные коробки"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Проект Boxes</h3>
+                  <p class="portfolio-index">Приложение</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img src="./images/prtf/prtf6.jpg" alt="Монитор" />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Inspiration has no Borders</h3>
+                  <p class="portfolio-index">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img src="./images/prtf/prtf7.jpg" alt="Розкрытый журнал" />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Издание Limited Edition</h3>
+                  <p class="portfolio-index">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img src="./images/prtf/prtf8.jpg" alt="Бирка одежды" />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Проект LAB</h3>
+                  <p class="portfolio-index">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="portfolio-item">
+              <a class="portfolio-link" href="#"
+                ><div class="portfolio-image">
+                  <img
+                    src="./images/prtf/prtf9.jpg"
+                    alt="Человек работает за ноутбуком, круплый план"
+                  />
+                  <div class="portfolio-overlay">
+                    <p class="portfolio-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Inventore fuga accusamus eaque magnam soluta aut ducimus
+                      dignissimos id blanditiis eveniet natus libero laboriosam
+                      doloremque suscipit, optio vitae atque, dolorem non.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-description">
+                  <h3 class="portfolio-title">Growing Business</h3>
+                  <p class="portfolio-index">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--подвал-->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="adress-box">
+          <a href="./index.html" class="footer-logo"
+            >Web<span class="f-studio">Studio</span></a
+          >
+          <address class="adress">
+            <span class="adress-item">г. Киев, пр-т Леси Украинки, 26</span>
+            <a class="adress-item adress-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="adress-item adress-link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
+        <div class="links">
+          <p class="links-text">присоединяйтесь</p>
+          <ul class="links-list">
+            <li class="links-item">
+              <a
+                class="links-link"
+                aria-label="instagram"
+                href="https://www.instagram.com/sviatoslav.vakarchuk/?hl=uk"
+              >
+                <svg class="links-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links-item">
+              <a
+                class="links-link"
+                aria-label="twitter"
+                href="https://twitter.com/s_vakarchuk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+              >
+                <svg class="links-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links-item">
+              <a
+                class="links-link"
+                aria-label="facebook"
+                href="https://www.facebook.com/sviatoslav.vakarchuk/"
+              >
+                <svg class="links-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="links-item">
+              <a
+                class="links-link"
+                aria-label="linkedin"
+                href="https://ua.linkedin.com/"
+              >
+                <svg class="links-icon" width="20" height="20">
+                  <use href="./images/icons/symbol-defs.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="spam">
+          <div class="spam-position">
+            <label for="f-email">
+              <span class="spam-text">Подпишитесь на рассылку</span>
+              <input
+                class="spam-input"
+                type="email"
+                name="email"
+                id="f-email"
+                placeholder="E-mail"
+              />
+            </label>
+          </div>
+          <div class="spam-container">
+            <button class="spam-button">
+              <span class="text">Подписаться</span>
+              <svg class="spam-icon" width="24" height="24">
+                <use href="./images/icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
