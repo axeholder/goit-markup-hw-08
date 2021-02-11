@@ -32,10 +32,17 @@ img {
 
 .container {
   /* outline: 2px solid gold; */
-  width: 1200px;
+  width: $width-mobile;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+  }
 }
 
 .section-title {

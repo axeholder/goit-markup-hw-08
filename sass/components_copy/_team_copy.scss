@@ -1,0 +1,79 @@
+/* наша команда */
+.team {
+  background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+
+  &-item {
+    background-color: $main-bg-color;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-title {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    margin-top: 30px;
+    height: 19px;
+  }
+
+  &-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    height: 19px;
+  }
+}
+
+.social {
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+
+  display: flex;
+  padding: 0;
+
+  &-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: $main-bg-color;
+    color: #afb1b8;
+    transition: all $animation-duration $animation-type;
+  }
+
+  &-icon {
+    fill: currentColor;
+  }
+
+  &-link:hover,
+  &-link:focus {
+    background-color: $accent-color;
+    color: #ffffff;
+  }
+}
