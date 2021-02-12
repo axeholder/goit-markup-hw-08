@@ -833,37 +833,43 @@ img {
 
 /* чем мы занимаемся */
 .occupation {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
 }
-.occupation-list {
-  display: flex;
-  margin-top: 50px;
-}
-.occupation-item {
-  position: relative;
-  width: 370px;
-}
-.occupation-text {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-.occupation-overlay {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  background-color: rgba(47, 48, 58, 0.8);
-}
-.occupation-item:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 1200px) {
+  .occupation {
+    display: unset;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .occupation-list {
+    display: flex;
+    margin-top: 50px;
+  }
+  .occupation-item {
+    position: relative;
+    width: 370px;
+  }
+  .occupation-text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  .occupation-overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+  .occupation-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 /* наша команда */
