@@ -322,10 +322,15 @@ img {
 .section-title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+@media (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .header-container {
@@ -740,10 +745,12 @@ img {
 
 .features {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media (min-width: 1200px) {
   .features {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 }
 .features-title {
@@ -834,42 +841,41 @@ img {
 
 /* чем мы занимаемся */
 .occupation {
-  display: none;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-@media (min-width: 1200px) {
+.occupation-list {
+  display: flex;
+  margin-top: 50px;
+}
+.occupation-item {
+  position: relative;
+  width: 370px;
+}
+.occupation-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.occupation-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.occupation-item:not(:last-child) {
+  margin-right: 30px;
+}
+@media (max-width: 1199px) {
   .occupation {
-    display: unset;
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .occupation-list {
-    display: flex;
-    margin-top: 50px;
-  }
-  .occupation-item {
-    position: relative;
-    width: 370px;
-  }
-  .occupation-text {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  .occupation-overlay {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 27px;
-    padding-bottom: 27px;
-    background-color: rgba(47, 48, 58, 0.8);
-  }
-  .occupation-item:not(:last-child) {
-    margin-right: 30px;
+    display: none;
   }
 }
 
@@ -879,18 +885,10 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.team-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-}
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.team-item:not(:last-child) {
-  margin-right: 30px;
 }
 .team-title {
   color: #212121;

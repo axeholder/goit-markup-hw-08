@@ -9,9 +9,11 @@
 
 .features {
   padding-top: 60px;
+  padding-bottom: 60px;
 
   @media (min-width: $width-desktop) {
     padding-top: 94px;
+    padding-bottom: 0;
   }
 
   &-title {
