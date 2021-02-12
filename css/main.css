@@ -469,6 +469,11 @@ img {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .mail {
+    margin-bottom: 10px;
+  }
+}
 @media (min-width: 1200px) {
   .mail {
     margin-left: auto;
@@ -733,7 +738,12 @@ img {
 }
 
 .features {
-  padding-top: 96px;
+  padding-top: 60px;
+}
+@media (min-width: 1200px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 .features-title {
   color: #212121;
@@ -741,6 +751,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .features-title {
+    text-align: start;
+  }
 }
 .features-text {
   font-weight: 400;
@@ -749,14 +765,35 @@ img {
   margin-top: 10px;
 }
 
-.features-item:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 768px) {
+  .features-item {
+    width: 354px;
+  }
+  .features-item:not(:nth-child(2n-1)) {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .features-item:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .features-item {
+    width: 270px;
+  }
+  .features-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .features-item:not(:nth-child(2n-1)) {
+    margin-left: unset;
+  }
 }
 .features-item::before {
   content: "";
   display: inline-block;
   background-color: #f5f4fa;
-  width: 270px;
+  width: 450px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
@@ -764,11 +801,17 @@ img {
   background-repeat: no-repeat;
   background-size: 70px 70px;
 }
-
-.features-list {
-  display: flex;
-  text-align: left;
+@media (min-width: 768px) {
+  .features-item::before {
+    width: 354px;
+  }
 }
+@media (min-width: 1200px) {
+  .features-item::before {
+    width: 270px;
+  }
+}
+
 .features-list .antena::before {
   background-image: url("../images/icons/antena.svg");
 }
@@ -780,6 +823,12 @@ img {
 }
 .features-list .astronaut::before {
   background-image: url("../images/icons/astronaut.svg");
+}
+@media (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /* чем мы занимаемся */

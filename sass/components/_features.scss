@@ -8,7 +8,11 @@
 }
 
 .features {
-  padding-top: 96px;
+  padding-top: 60px;
+
+  @media (min-width: $width-desktop) {
+    padding-top: 94px;
+  }
 
   &-title {
     color: $secondary-text-color;
@@ -16,6 +20,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $width-tablet) {
+      text-align: start;
+    }
   }
 
   &-text {
@@ -27,28 +36,54 @@
 }
 
 .features-item {
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media (min-width: $width-tablet) {
+    width: 354px;
+
+    &:not(:nth-child(2n-1)) {
+      margin-left: 30px;
+    }
+  }
+
+  @media (max-width: ($width-tablet)-1px) {
+    &:not(:first-child) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:not(:nth-child(2n-1)) {
+      margin-left: unset;
+    }
   }
 
   &::before {
     content: '';
     display: inline-block;
     background-color: #f5f4fa;
-    width: 270px;
+    width: 450px;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: 70px 70px;
+
+    @media (min-width: $width-tablet) {
+      width: 354px;
+    }
+
+    @media (min-width: $width-desktop) {
+      width: 270px;
+    }
   }
 }
 
 .features-list {
-  display: flex;
-  text-align: left;
-
   .antena::before {
     background-image: url('../images/icons/antena.svg');
   }
@@ -63,5 +98,10 @@
 
   .astronaut::before {
     background-image: url('../images/icons/astronaut.svg');
+  }
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

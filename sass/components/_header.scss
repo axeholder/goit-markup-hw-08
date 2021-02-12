@@ -152,6 +152,10 @@
 }
 
 .mail {
+  @media (min-width: $width-tablet) {
+    margin-bottom: 10px;
+  }
+
   @media (min-width: $width-desktop) {
     margin-left: auto;
     margin-right: 50px;
