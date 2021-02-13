@@ -3,33 +3,93 @@
   color: $white-text-color;
 
   &-bg-img {
-    max-width: 1600px;
-    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('../images/hero/hero-bg-img.jpg');
-    margin-right: auto;
-    margin-left: auto;
+      url(../../images/hero/hero-mob/Header_img.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-mob/Header_img@2x.jpg);
+    }
+
+    @media (min-width: $width-tablet) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-tab/Header_img.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../images/hero/hero-tab/Header_img@2x.jpg);
+      }
+    }
+
+    @media (min-width: $width-desktop) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-dsktp/Img.jpg);
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../images/hero/hero-dsktp/Img@2x.jpg);
+      }
+    }
   }
 
   &-container {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 60px;
+
+    @media (min-width: $width-tablet) {
+      padding: 118px 204px;
+    }
+
+    @media (min-width: $width-desktop) {
+      padding: 200px 252px;
+    }
   }
 
   &-title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin: 0 auto;
+    text-align: center;
 
-    width: 696px;
+    @media (min-width: $width-desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &-button {
