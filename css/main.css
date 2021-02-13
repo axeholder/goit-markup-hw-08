@@ -1485,6 +1485,7 @@ img {
 .portfolio-image {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 .portfolio-text {
   font-weight: 400;
