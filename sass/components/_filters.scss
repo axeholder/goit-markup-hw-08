@@ -2,8 +2,18 @@
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+
+  @media (min-width: $width-tablet) {
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-bottom: 50px;
+  }
 
   &-button {
     background-color: #f5f4fa;
@@ -11,14 +21,20 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     cursor: pointer;
     padding: 6px 22px;
     border: none;
     border-radius: 4px;
+    margin-bottom: 15px;
 
     text-align: center;
 
     transition: all $animation-duration $animation-type;
+
+    @media (min-width: $width-tablet) {
+      margin-bottom: 0;
+    }
   }
 
   &-item:not(:last-child) {
