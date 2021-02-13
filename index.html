@@ -53,18 +53,21 @@
             >
           </li>
         </ul>
-        <button class="header-menu">&#9776</button>
-        <div class="backdrop is-hidden">
+        <button class="header-menu" data-menu-open>&#9776</button>
+        <div class="backdrop is-hidden" data-menu>
           <div class="header-modal">
-            <button class="menu-close">&#10006</button>
+            <button class="menu-close" data-menu-close>&#10006</button>
             <ul class="mobile-list">
             <li class="mobile-item">
-              <a href="./index.html" class="mobile-link mobile-current">Студия</a>
+              <a href="./index.html" 
+              class="mobile-link mobile-current">Студия</a>
             </li>
             <li class="mobile-item">
-              <a href="./portfolio.html" class="mobile-link">Портфолио</a>
+              <a href="./portfolio.html" 
+              class="mobile-link">Портфолио</a>
             </li>
-            <li class="mobile-item"><a href="#" class="mobile-link">Контакты</a></li>
+            <li class="mobile-item"><a href="#" 
+              class="mobile-link">Контакты</a></li>
           </ul>
           <ul class="mobile-contacts">
             <li class="item-mobile">
@@ -80,19 +83,27 @@
           </li>
         </ul>
         <ul class="mobile-social">
-                        <li class="mobile-social-item">
-                            <a class="mobile-social-link" href="www.instagram.com" aria-label="Instagram">Instagram</a>
-                        </li>
-                        <li class="mobile-social-item">
-                            <a class="mobile-social-link" href="www.twitter.com" aria-label="Twitter">Twitter</a>
-                        </li>
-                        <li class="mobile-social-item">
-                            <a class="mobile-social-link" href="www.facebook.com" aria-label="Facebook">Facebook</a>
-                        </li>
-                        <li class="mobile-social-item">
-                            <a class="mobile-social-link" href="www.linkedin.com" aria-label="linkedin">LinkedIn</a>
-                        </li>
-                    </ul>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" 
+                href="www.instagram.com" 
+                aria-label="Instagram">Instagram</a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" 
+                href="www.twitter.com" 
+                aria-label="Twitter">Twitter</a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" 
+                href="www.facebook.com" 
+                aria-label="Facebook">Facebook</a>
+            </li>
+            <li class="mobile-social-item">
+                <a class="mobile-social-link" 
+                href="www.linkedin.com" 
+                aria-label="linkedin">LinkedIn</a>
+            </li>
+        </ul>
           </div>
         </div>
       </div>
@@ -663,5 +674,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

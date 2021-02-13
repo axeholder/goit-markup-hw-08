@@ -1,10 +1,13 @@
 // модальное меню моб версии
 
 .header-modal {
+  position: absolute;
+
   display: flex;
   flex-direction: column;
-  border: solid 1px red;
   padding-left: 40px;
+
+  background-color: $main-bg-color;
 }
 
 .menu-close {
@@ -36,6 +39,11 @@
     letter-spacing: 0.02em;
 
     color: $secondary-text-color;
+  }
+
+  &-link:focus,
+  &-link:hover {
+    color: $accent-color;
   }
 
   &-item:not(:last-child) {

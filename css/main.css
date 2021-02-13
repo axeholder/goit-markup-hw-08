@@ -519,10 +519,11 @@ img {
 }
 
 .header-modal {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  border: solid 1px red;
   padding-left: 40px;
+  background-color: #ffffff;
 }
 
 .menu-close {
@@ -549,6 +550,9 @@ img {
   line-height: 47px;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.mobile-link:focus, .mobile-link:hover {
+  color: #2196f3;
 }
 .mobile-item:not(:last-child) {
   margin-bottom: 32px;
