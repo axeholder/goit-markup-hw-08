@@ -19,7 +19,7 @@
   align-items: center;
   padding-bottom: 40px;
 
-  width: 528px;
+  width: 450px;
 
   left: 50%;
   top: 50%;
@@ -29,6 +29,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media (min-width: $width-desktop) {
+    width: 528px;
+  }
 
   &-close {
     margin-top: 8px;
@@ -51,21 +55,29 @@
   }
 
   &-title {
+    text-align: center;
     margin-top: 2px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   &-form {
-    width: 448px;
+    width: 370px;
     margin-top: 12px;
+
+    @media (min-width: $width-desktop) {
+      width: 448px;
+      margin-top: 10px;
+    }
   }
 
   &-form .item:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   &-icon {
@@ -164,11 +176,15 @@
 
   .form-name {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
     letter-spacing: 0.03em;
 
     color: $main-text-color;
+
+    @media (min-width: $width-desktop) {
+      font-size: 14px;
+    }
   }
 }
 
