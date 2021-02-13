@@ -1032,24 +1032,48 @@ img {
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .footer-container {
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 .footer-logo {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
+}
+@media (min-width: 1200px) {
+  .footer-logo {
+    font-size: 26px;
+    line-height: 1.2;
+  }
 }
 
 .f-studio {
   color: #ffffff;
 }
 
+.tablet-position {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .tablet-position {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
 .adress {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   color: #ffffff;
   font-style: normal;
   font-weight: 400;
@@ -1057,16 +1081,32 @@ img {
   line-height: 1.71;
   margin-top: 20px;
 }
+@media (min-width: 1200px) {
+  .adress {
+    align-items: flex-start;
+  }
+}
 .adress-item {
   height: 21px;
 }
 .adress-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .adress-box {
+    margin-right: 165px;
+  }
+}
+@media (min-width: 1200px) {
+  .adress-box {
+    align-items: flex-start;
+    margin-right: 70px;
+  }
 }
 .adress-item:not(:first-child) {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 .adress-link {
   color: rgba(255, 255, 255, 0.6);
@@ -1076,7 +1116,12 @@ img {
 }
 
 .links {
-  margin-left: 70px;
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  .links {
+    margin-top: 0;
+  }
 }
 .links-text {
   text-transform: uppercase;
@@ -1086,6 +1131,12 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .links-text {
+    text-align: start;
+  }
 }
 .links-list {
   display: flex;
@@ -1116,12 +1167,37 @@ img {
 
 .spam {
   display: flex;
-  margin-right: 0;
-  margin-left: auto;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+@media (min-width: 1200px) {
+  .spam {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 0;
+  }
 }
 .spam-position {
-  width: 358px;
-  margin-right: 12px;
+  width: 450px;
+}
+@media (min-width: 1200px) {
+  .spam-position {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+.spam-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .spam-label {
+    align-items: flex-start;
+  }
 }
 .spam-input {
   padding-left: 16px;
@@ -1143,6 +1219,7 @@ img {
 }
 .spam-container {
   display: flex;
+  margin-top: 20px;
 }
 .spam-button {
   display: flex;
