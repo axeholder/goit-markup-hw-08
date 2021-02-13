@@ -1,0 +1,93 @@
+// модальное меню моб версии
+
+.header-modal {
+  display: flex;
+  flex-direction: column;
+  border: solid 1px red;
+  padding-left: 40px;
+}
+
+.menu-close {
+  width: 40px;
+  height: 40px;
+  align-self: flex-end;
+  background-color: $main-bg-color;
+  border: none;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.mobile {
+  &-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 302px;
+  }
+
+  &-current {
+    color: $accent-color;
+  }
+}
+
+.link-mobile {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  margin-top: 32px;
+
+  &-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+  }
+}
+
+.mobile-social {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 48px;
+
+  margin-right: 83px;
+
+  &-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+}
