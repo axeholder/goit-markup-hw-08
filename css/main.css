@@ -882,13 +882,50 @@ img {
 /* наша команда */
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media (min-width: 768px) {
+  .team-main-title {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  .team-main-title {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
 }
 .team-item {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 30px;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .team-item {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .team-item {
+    padding-bottom: 30px;
+  }
 }
 .team-title {
   color: #212121;
@@ -910,11 +947,8 @@ img {
 }
 
 .social {
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
   display: flex;
-  padding: 0;
+  justify-content: center;
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
