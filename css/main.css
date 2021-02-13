@@ -1252,7 +1252,7 @@ img {
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 @media (min-width: 768px) {
   .filter {
@@ -1296,20 +1296,41 @@ img {
 
 /* портфолио */
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
+  flex-direction: column;
   margin-top: -30px;
+}
+@media (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 }
 .portfolio-item {
   text-align: left;
-  margin-right: 30px;
   margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+}
+@media (min-width: 768px) {
+  .portfolio-item {
+    margin-right: 30px;
+    width: 354px;
+  }
+}
+@media (min-width: 1200px) {
+  .portfolio-item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 .portfolio-image {
   position: relative;
@@ -1339,6 +1360,11 @@ img {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-description {
+    height: 146px;
+  }
 }
 .portfolio-title {
   color: #212121;

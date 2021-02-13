@@ -1,21 +1,38 @@
 /* портфолио */
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (min-width: $width-desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &-list {
     display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
+    flex-direction: column;
     margin-top: -30px;
+
+    @media (min-width: $width-tablet) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-right: -30px;
+    }
   }
 
   &-item {
     text-align: left;
-    margin-right: 30px;
     margin-top: 30px;
-    flex-basis: calc(100% / 3 - 30px);
+
+    @media (min-width: $width-tablet) {
+      margin-right: 30px;
+      width: 354px;
+    }
+
+    @media (min-width: $width-desktop) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
   }
 
   &-image {
@@ -51,6 +68,10 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     padding: 20px 24px;
+
+    @media (min-width: $width-tablet) and (max-width: ($width-desktop)-1px) {
+      height: 146px;
+    }
   }
 
   &-title {
