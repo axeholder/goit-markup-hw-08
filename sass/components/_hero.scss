@@ -11,7 +11,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/hero/hero-mob/Header_img.jpg);
+      url(../images/hero/hero-mob/Header_img.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -21,7 +21,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/hero-mob/Header_img@2x.jpg);
+        url(../images/hero/hero-mob/Header_img@2x.jpg);
     }
 
     @media (min-width: $width-tablet) {
@@ -30,7 +30,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/hero-tab/Header_img.jpg);
+        url(../images/hero/hero-tab/Header_img.jpg);
 
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -40,7 +40,7 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(../../images/hero/hero-tab/Header_img@2x.jpg);
+          url(../images/hero/hero-tab/Header_img@2x.jpg);
       }
     }
 
@@ -50,7 +50,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/hero/hero-dsktp/Img.jpg);
+        url(../images/hero/hero-dsktp/Img.jpg);
 
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
@@ -60,21 +60,19 @@
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(../../images/hero/hero-dsktp/Img@2x.jpg);
+          url(../images/hero/hero-dsktp/Img@2x.jpg);
       }
     }
   }
 
   &-container {
     text-align: center;
-    padding: 118px 60px;
-
-    @media (min-width: $width-tablet) {
-      padding: 118px 204px;
-    }
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     @media (min-width: $width-desktop) {
-      padding: 200px 252px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 
