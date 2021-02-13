@@ -84,9 +84,16 @@
     text-transform: uppercase;
     text-align: center;
 
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 360px;
+
     @media (min-width: $width-desktop) {
       font-size: 44px;
       line-height: 1.36;
+
+      width: 696px;
     }
   }
 

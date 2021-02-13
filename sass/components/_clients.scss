@@ -11,6 +11,10 @@
 
   &-title {
     margin-bottom: 30px;
+
+    @media (min-width: $width-desktop) {
+      margin-bottom: 50px;
+    }
   }
 
   &-list {
